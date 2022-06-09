@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 20px;
+}
+body::-webkit-scrollbar-thumb {
+  border-width: 1px 1px 1px 2px;
+  border-radius: 2px;
+  border-color: #777;
+  background-color: #aaa;
+}
+body::-webkit-scrollbar-track {
+  border-width: 0;
+}
+
+.sky {
+  /* поменять backgrond-color: на #ddeafd */
+  background-color: #dbdbdb;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.sidewalk {
+  background-color: #f4efed;
+  height: 15vh;
+  display: flex;
+  position: relative;
+}
+
+.side-svet {
+  background-color: #f4efed;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fix-svetofor {
+  background-color: #f4efed;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* 1. стереть нижнюю строчку display: none; 
+  2. добавить display: none; для класса .side-svet, указанного выше */
+  display: none;
+}
+
+.road {
+  background-color: #9b9b9b;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+}
+
+.road-fixed {
+  background-color: #9b9b9b;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  /* стереть нижнюю строчку display: none, затем добавить display: none; для класса .road, указанного выше */
+  display: none;
+}
+
+.sidewalk-bottom {
+  background-color: #f4efed;
+  height: 7vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.build-before {
+  z-index: 3;
+}
+
+.pipes-1 {
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  z-index: 2;
+}
+
+.fixed-pipes {
+  position: absolute;
+  left: 20%;
+  z-index: 2;
+  /* стереть display: none; и добавить в класс .pipes-1 сверху */
+  display: none;
+}
+
+.bushes {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 4;
+}
+
+.sidewalk__left {
+  width: 30%;
+  z-index: 5;
+  margin-top: -50px;
+  margin-left: 100px;
+}
+
+.sidewalk__tree {
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  z-index: 5;
+}
+
+.sidewalk__tree img {
+  width: 100px;
+}
+
+/* закоментировать или стереть верхний класс .sidewalk-tree img, затем прописать ширину для класса .tree в 300рх*/
+
+/* .tree {
+  width: 300px;
+} */
+
+.skameika {
+  margin-left: 200px;
+}
+
+.side-svet-box {
+  z-index: 5;
+  margin-left: 200px;
+}
+
+.perehod {
+  margin-left: 100px;
+}
+
+.sidewalk-bottom__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 5;
+}
+
+.trash {
+  z-index: 5;
+}
+
+/* прописать display: none; для классов .trash и .side-trash  */
+
+/* .trash,
+.side-trash {
+  display: none;
+} */
